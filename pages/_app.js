@@ -1,7 +1,20 @@
-import '../styles/globals.css'
+/* eslint-disable quotes */
+import Script from "next/script";
+import { ThemeProvider } from "next-themes";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import "../styles/globals.css";
+import { Navbar, Footer } from '../components';
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => (
+  <ThemeProvider attribute="class">
+    <div className="dark:bg-nft-dark bg-white min-h-screen">
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
+    </div>
+
+    <Script src="https://kit.fontawesome.com/1e092a54e7.js" crossorigin="anonymous" />
+  </ThemeProvider>
+);
+
+export default MyApp;
