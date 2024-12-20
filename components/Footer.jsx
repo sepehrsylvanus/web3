@@ -23,7 +23,7 @@ const Footer = () => {
   const { theme } = useTheme();
   return (
     <footer className="flexCenter flex-col border-t dark:border-nft-black-1 border-nft-gray-1 sm:py-8 py-16">
-      <div className=" w-full minmd:w-4/5 flex flex-row md:flex-col border-t  sm:px-4 px-16">
+      <div className=" w-full minmd:w-4/5 flex flex-row md:flex-col   sm:px-4 px-16">
         <div className="flexStart flex-1 flex-col">
           <div className="flexCenter cursor-pointer">
             <Image
@@ -40,7 +40,7 @@ const Footer = () => {
           <p className="font-poppins dark:text-white text-nft-black-1 font-semibold text-base mt-6">
             Get the latest updates
           </p>
-          <div className="flexBetween md:w-full minlg:w-557 w-357 mt-6 dark:bg-nft-black-2 bg-white dark:border-nft-black-2 border-nft-gray-2 rounded-md">
+          <div className="flexBetween md:w-full minlg:w-557 w-357 mt-6 dark:bg-nft-black-2 bg-white border dark:border-nft-black-2 border-nft-gray-2 rounded-md">
             <input
               type="email"
               placeholder="Your Email"
